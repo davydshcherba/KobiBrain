@@ -8,6 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 #main_img {
     background-image: url('https://images.t-online.de/2021/05/87224790v2/0x58:1920x1082/fit-in/1920x0/kobe-bryant-im-trikot-der-los-angeles-lakers-wurde-er-zur-ikone.jpg');
     background-size: cover;
@@ -48,11 +49,12 @@ body {
 }
 
 
-#photo_bryant{
+#photo_bryant {
     background-color: #FDB927;
     padding-top: 50px;
 }
-.banner_img{
+
+.banner_img {
     width: 315px;
     height: 70vh;
 
@@ -95,3 +97,41 @@ body {
     margin-bottom: 12px;
 }
 
+.first_steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #f0f0f0;
+    padding: 60px 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.first_steps img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.first_steps img:hover {
+    transform: scale(1.01);
+}
+
+.first_text {
+    font-size: 18px;
+    color: #222;
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 10px;
+}
+
+.first_text p {
+    margin-bottom: 20px;
+}
