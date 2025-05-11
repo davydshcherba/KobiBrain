@@ -1,137 +1,167 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 #main_img {
-    background-image: url('https://images.t-online.de/2021/05/87224790v2/0x58:1920x1082/fit-in/1920x0/kobe-bryant-im-trikot-der-los-angeles-lakers-wurde-er-zur-ikone.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url("https://images.t-online.de/2021/05/87224790v2/0x58:1920x1082/fit-in/1920x0/kobe-bryant-im-trikot-der-los-angeles-lakers-wurde-er-zur-ikone.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #main_img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 #main_img > h1 {
-    color: white;
-    font-size: clamp(3rem, 10vw, 8rem);
-    font-weight: 700;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 0 20px;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    animation: fadeIn 1.5s ease-in-out;
+  color: white;
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-
 #photo_bryant {
-    background-color: #FDB927;
-    padding-top: 50px;
+  background-color: #fdb927;
+  padding-top: 50px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8)
 }
 
 .banner_img {
-    width: 315px;
-    height: 70vh;
+  width: 315px;
+  height: 70vh;
 
-    margin-left: 150px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  margin-left: 150px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .children {
-
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
 }
 
 .child_img {
-    width: 250px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .child_text {
-    flex: 1;
+  flex: 1;
 
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
 }
 
 .child_text p {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
-.first_steps {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #f0f0f0;
-    padding: 60px 30px;
-    border-radius: 20px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 60px auto;
-    text-align: center;
-    min-height: 100vh;
+
+.first_steps{
+  padding-top: 50px;
+  height: 100vh;
+
+  background-color: #fdb927;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8)
 }
 
-.first_steps img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 30px auto;
-    border-radius: 20px;
-    object-fit: cover;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+.first_steps img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8)
+  
+}
+.first_steps > .first_text{
+ display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;;
+  width: 700px;
+  margin-top: 40px;
+}
+.first_steps > .first_text > p{
+  margin-left: 35px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  background-color: #feca5b;
 }
 
-.first_steps img:hover {
-    transform: scale(1.01);
+.heyday_career {
+  height: 100vh;
+  background-color: #552583; 
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.first_text {
-    font-size: 18px;
-    color: #222;
-    line-height: 1.8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0 10px;
+.heyday_career img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  border: 4px solid #fdb927; 
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+
+ 
 }
 
-.first_text p {
-    margin-bottom: 20px;
+.heyday_career > .heyday_text {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 700px;
+  margin-top: 10px;
+}
+
+.heyday_career > .heyday_text > p {
+  margin-left: 35px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  background-color: #fdb927; /* жовтий Lakers */
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
 }
