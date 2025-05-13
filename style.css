@@ -192,3 +192,71 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  #main_img {
+    height: 80vh;
+    padding: 0 10px;
+  }
+
+  #main_img > h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    padding: 0 10px;
+  }
+
+  .banner_img {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .children {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .child_img {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .child_text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .first_steps,
+  .heyday_career,
+  .last_day {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .first_steps img,
+  .heyday_career img,
+  .last_day img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+
+  .first_steps > .first_text,
+  .heyday_career > .heyday_text {
+    width: 100%;
+  }
+
+  .first_steps > .first_text > p,
+  .heyday_career > .heyday_text > p {
+    font-size: 16px;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .last_day .last_text {
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+  }
+}
