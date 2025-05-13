@@ -160,8 +160,35 @@ body {
   font-weight: bold;
   font-size: 20px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  background-color: #fdb927; /* жовтий Lakers */
+  background-color: #fdb927; 
   color: #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+.last_day {
+  height: 100vh;
+  background-color: #1c1c1c;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.last_day img {
+  max-width: 70%;
+  height: 40%;
+  box-shadow: 0 0 15px rgba(253, 185, 39, 0.7); /* м'яке світіння */
+  margin-bottom: 30px;
+}
+.last_day .last_text {
+  color: #feca5b;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  background-color: #2a2a2a;
   padding: 20px;
   border-radius: 10px;
 }
